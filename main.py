@@ -1,38 +1,58 @@
-habit_data = []
+import tkinter as tk
+from tkinter import messagebox
 
-while True:
-    print("\n=== Habit Tracker ===")
-    print("1. Add Today's Habits")
-    print("2. View Summary")
-    print("3. Exit")
+all_habits = []
 
-    choice = input("Enter your choice: ")
+def save_habits():
+    water = water_box.get()
+    sleep = sleep_box.get()
+    exercise = exercise_box.get()
 
-    if choice == "1":
-        water = input("How many glasses of water did you drink today? ")
-        sleep = input("How many hours did you sleep? ")
-        exercise = input("Minutes of exercise today: ")
+    if water == "" or sleep == "" or exercise == "":
+        messagebox.showwarning("Missing", "Please fill all the boxes.")
+        return
 
-        record = {
-            "Water": water,
-            "Sleep": sleep,
-            "Exercise": exercise
-        }
+    today = {"Water": water, "Sleep": sleep, "Exercise": exercise}
+    all_habits.append(today)
 
-        habit_data.append(record)
-        print("Habits saved successfully!")
+    messagebox.showinfo("Saved", "Your habits are saved.")
+    water_box.delete(0, tk.END)
+    sleep_box.delete(0, tk.END)
+    exercise_box.delete(0, tk.END)
 
-    elif choice == "2":
-        print("\n=== Summary ===")
-        if len(habit_data) == 0:
-            print("No records found.")
-        else:
-            for i, day in enumerate(habit_data, start=1):
-                print(f"Day {i}: Water = {day['Water']} glasses, Sleep = {day['Sleep']} hrs, Exercise = {day['Exercise']} mins")
+def show_summary():
+    if len(all_habits) == 0:
+        messagebox.showinfo("No Data", "No habits saved yet.")
+        return
 
-    elif choice == "3":
-        print("Thank you for using the Habit Tracker!")
-        break
+    win = tk.Toplevel(main)
+    win.title("Summary")
+    win.geometry("360x300")
 
-    else:
-        print("Invalid choice, please try again.")
+    for num, day in enumerate(all_habits, start=1):
+        text = f"Day {num}: Water={day['Water']} glasses, Sleep={day['Sleep']} hrs, Exercise={day['Exercise']} mins"
+        tk.Label(win, text=text, wraplength=330, justify="left").pack(pady=3)
+
+main = tk.Tk()
+main.title("Habit Tracker")
+main.geometry("400x320")
+
+tk.Label(main, text="Habit Tracker", font=("Arial", 18, "bold")).pack(pady=10)
+
+tk.Label(main, text="Water (glasses):").pack()
+water_box = tk.Entry(main)
+water_box.pack()
+
+tk.Label(main, text="Sleep (hours):").pack()
+sleep_box = tk.Entry(main)
+sleep_box.pack()
+
+tk.Label(main, text="Exercise (minutes):").pack()
+exercise_box = tk.Entry(main)
+exercise_box.pack()
+
+tk.Button(main, text="Save", command=save_habits, bg="#4CAF50", fg="white", width=20).pack(pady=10)
+tk.Button(main, text="Summary", command=show_summary, bg="#2196F3", fg="white", width=20).pack(pady=5)
+tk.Button(main, text="Exit", command=main.quit, bg="#F44336", fg="white", width=20).pack(pady=5)
+
+main.mainloop()
