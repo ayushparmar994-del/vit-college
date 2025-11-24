@@ -72,7 +72,7 @@ Algorithm : -          1. Start the program.
 
 
 
-11. Folder Structure
+10. Folder Structure
 
 /screenshots – All screenshots
 
