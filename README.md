@@ -61,11 +61,18 @@ Algorithm : -          1. Start the program.
                       This project helped me understand how programming concepts can be used to solve daily life problems. By using basic Python structures like lists and dictionaries, I                       was able to create a working application that encourages users to build better habits. This can be extended in the future by adding graphs, notifications, or mobile                       app features.
 
 9. Screenshots : -  
+<img width="1366" height="768" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/8d8d51e7-9dc8-4ab2-8327-cecf2692fe3d" />
+<img width="1366" height="768" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/0cbf5331-83b4-4c7b-afe5-f3da012c09b9" />
+<img width="1366" height="768" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/7ae628f8-1a36-4aeb-b984-ac2113cc78b9" />
+<img width="1366" height="768" alt="Screenshot (62)" src="https://github.com/user-attachments/assets/156d78ce-f95b-42ec-aa5f-d20046ee0055" />
+<img width="1366" height="768" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/5329fcc0-5673-42c9-98d2-4a9ada598744" />
+<img width="1366" height="768" alt="Screenshot (64)" src="https://github.com/user-attachments/assets/e1a56062-d27b-42f2-889a-4b3d2dc87d8c" />
 
 
 
 
-10. Folder Structure
+
+11. Folder Structure
 
 /screenshots – All screenshots
 
