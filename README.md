@@ -62,12 +62,7 @@ Algorithm : -          1. Start the program.
 
 9. Screenshots : -  
 
-<img width="1366" height="768" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/cc5db1bd-dcc0-49fb-92ed-70ef6adb9a5d" />
-<img width="1366" height="768" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/9e72e286-b7e0-44ad-a8d2-10ed96263586" />
-<img width="1366" height="768" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/bfc4cb8c-a33a-49e8-a10e-81c5ba7501ca" />
-<img width="1366" height="768" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/34ab3fe3-78d6-4f8e-a64d-994cf6b5e1c8" />
-<img width="1366" height="768" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/e4df8a96-5812-41a9-9505-c3d29c12eaea" />
-<img width="1366" height="768" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/e3b6e439-86ee-4c19-9a3a-c1381af49ed5" />
+
 
 
 10. Folder Structure
